@@ -135,7 +135,7 @@ exe 'syntax match jsxTagName
 "         ~~~~~~~~
 syntax region jsxString start=+\z(["']\)+  skip=+\\\%(\z1\|$\)+  end=+\z1+ contained contains=@Spell display
 
-let s:tags = get(g:, 'vim_jsx_pretty_template_tags', ['html', 'raw', '  '])
+let s:tags = get(g:, 'vim_jsx_pretty_template_tags', ['html', 'raw', '*/ '])
 let s:enable_tagged_jsx = !empty(s:tags)
 
 " add support to JSX inside the tagged template string
